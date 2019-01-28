@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<style>
+			* {
+				touch-action: pan-y;
+			}
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 28px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.swiper-container {
+				width: 100%;
+				height: 200px;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.swiper-slide img {
+				float: left;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/banner.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/banner.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/banner.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/banner.png" />
+				</div>
+
+			</div>
+			<!-- Add Pagination -->
+			<!--<div class="swiper-pagination"></div>-->
+			<!-- Add Arrows -->
+			
+			
+		</div>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-grid-view mui-grid-9" style="margin-top: 0px; background: white;">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe6f2;</span>
+						<div class="mui-media-body">通知公告</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe66c;</span>
+						<div class="mui-media-body">我院概况</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;font-weight: 600;">&#xe698;</span>
+						<div class="mui-media-body">资讯中心</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;font-weight: 600;">&#xe618;</span>
+						<div class="mui-media-body">创新中心</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="border-bottom: 0px;">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe617;</span>
+						<div class="mui-media-body">产业创新平台</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="border-bottom: 0px;">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe630;</span>
+						<div class="mui-media-body">技术转移转化</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="border-bottom: 0px;">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe60a;</span>
+						<div class="mui-media-body">知识产权中心</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="border-bottom: 0px;">
+					<a href="#">
+						<span class="iconfont" style="color: #CE0704;">&#xe65b;</span>
+						<div class="mui-media-body">活动中心</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="mui-content">
+			<div class="first">
+				<ul>
+					<li>
+					<div class="first-one"></div>
+					<div class="first-two">
+						最新动态
+					</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		<div class="mui-content">
+			<div class="first-artic">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">新闻资讯</a>
+					<a class="mui-control-item" href="#item2">科技动态</a>
+					<a class="mui-control-item" href="#item3">我院动态</a>
+				</div>
+			</div>
+			<div style="float: left;width: 100%;">
+				<div id="item1" class="mui-control-content mui-active">
+					<div id="scroll" class="mui-scroll-wrapper" style="overflow: inherit;">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news" style="height: 30px;background: #CE0704;border-radius: 5px; text-align: center;">
+										<a href="#" class="news-cha">查看更多</a>
+									</div>
+								</li>
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news2.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													为了满足新的应用需求，超大规模云服务提供商正在准备部署下一代12.8T交换机和其他网络设备，并将交换机之间的互连速度提高到400 Gb每秒
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													科技动态
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news2.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													为了满足新的应用需求，超大规模云服务提供商正在准备部署下一代12.8T交换机和其他网络设备，并将交换机之间的互连速度提高到400 Gb每秒
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													科技动态
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news2.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													为了满足新的应用需求，超大规模云服务提供商正在准备部署下一代12.8T交换机和其他网络设备，并将交换机之间的互连速度提高到400 Gb每秒
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													科技动态
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news2.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													为了满足新的应用需求，超大规模云服务提供商正在准备部署下一代12.8T交换机和其他网络设备，并将交换机之间的互连速度提高到400 Gb每秒
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													科技动态
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news" style="height: 30px;background: #CE0704;border-radius: 5px; text-align: center;">
+										<a href="#" class="news-cha">查看更多</a>
+									</div>
+								</li>
+								
+								
+							</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news3.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news3.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news3.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news">
+										<ul>
+											<li class="news-img">
+												<img src="img/news3.png" />
+											</li>
+											<li class="news-artic">
+												<a href="#" class="news-artic-a">
+													居住建委：将积极推进城市建设,提供优质的城市居住环境。
+												</a>
+											</li>
+											<li class="news-artic" style="height: auto;margin-top: 5%;">
+												<a href="#" class="news-artic-b">
+													新闻资讯
+												</a>
+												<a href="#" class="news-artic-b" style="text-align: right;">
+													2019-01-10
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="first-news" style="height: 30px;background: #CE0704;border-radius: 5px; text-align: center;">
+										<a href="#" class="news-cha">查看更多</a>
+									</div>
+								</li>
+								
+								
+							</ul>
+				</div>
+			</div>
+			<div style="width: 100%;float: left;height: 200px;background: black;"></div>
+			</div>
+			
+		</div>
+		
+		
+		<!--<div class="mui-content">
+			<div class="first">
+				<ul>
+					<li>
+					<div class="first-one"></div>
+					<div class="first-two">
+						通知公告
+					</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>-->
+		
+		
+	</body>
+	
+	<script src="js/mui.min.js"></script>
+		
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</html>
